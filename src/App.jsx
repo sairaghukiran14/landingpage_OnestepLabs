@@ -1,35 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./App.css";
+const logourl =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1708016444/OnestepLogo_iyo5ta.png";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="content w-full h-screen flex justify-center items-start  bg-black">
+      <div className="content_section flex flex-col justify-center items-center mt-56 gap-3">
+        <img src={logourl} alt="" className="w-56 object-cover" />
+        <div className="name text-3xl font-semibold text-white text-center">
+          OneStepLabs <div className="launch font-normal">launching Soon</div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
