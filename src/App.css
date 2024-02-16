@@ -5,3 +5,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.showcase_section {
+  background: url("https://res.cloudinary.com/dmqz317kh/image/upload/v1708076969/backwave_vkcqjj.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 28rem;
+}
+html {
+  background-color: black;
+}
